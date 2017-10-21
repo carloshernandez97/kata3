@@ -3,16 +3,8 @@ package kata3;
 public class Kata3 {
 
     public static void main(String[] args) {
-        Histogram<String> histo = new Histogram(); 
-        histo.increment("gmail.com");
-        histo.increment("ulpgc.com");
-        histo.increment("ulpgc.com");
-        histo.increment("ulpgc.com");
-        histo.increment("ull.com");
-        histo.increment("ull.com");
-        histo.increment("google.com");
-        histo.increment("google.com");
+        HistogramDisplay histo = new HistogramDisplay(); 
         
-        new HistogramDisplay(histo).execute();  
+        histo.execute(); 
     }
-}
+} 
